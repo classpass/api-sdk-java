@@ -4,7 +4,7 @@ Qordoba’s Java SDK offers platform-specific features that make the Qordoba imp
 
 How To Configure:
 =================
-The  controller classes accept the configuration parameters in their
+The controller classes accept the configuration parameters in their
 respective constructors.
 
 The code uses a java library namely UniRest. The reference to this

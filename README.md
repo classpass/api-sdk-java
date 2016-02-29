@@ -1,48 +1,51 @@
-QordobaLib
-=================
-Qordoba’s Java SDK offers platform-specific features that make the Qordoba implementation much simpler. The SDKs are open-source, and can be forked at the links below. Once forked, you can integrate our API into your application.
+# Java SDK
 
-How To Configure:
-=================
-The controller classes accept the configuration parameters in their
-respective constructors.
+Qordoba’s Java SDK offers platform-specific features that make the Qordoba API implementation much simpler. The SDK allows you to integrate our API with your application without worrying about low-level API details. Our Java SDK is open-source and can be forked at the link below. Once forked and configured, you will be able to easily integrate our API into your application.
 
-The code uses a java library namely UniRest. The reference to this
-library is already added as a maven dependency in the  pom.xml
-file. Therefore, you will need internet access to resolve this dependency.
+### Get the SDK
 
-How to build and install via Maven: 
-=============
+Download the Java API SDK from [GitHub](https://github.com/Qordobacode/api-sdk-java).
 
-    1. Extract the zip file to a new folder named JavaSDK.
-    2. Open a command prompt and navigate to the JavaSDK/QordobaLib folder.
-    3. Execute "mvn install", this will install dependencies and also add the  JAR in your local maven repository. 
-    4. In your own maven application, add the following lines which will refer to newly installed SDK: 
-        <dependency>
-            <groupId>QordobaLib</groupId>
-            <artifactId>QordobaLib</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
+To clone the repo: `git clone git@github.com:Qordobacode/api-sdk-java.git`.
 
 
-How to build via Eclipse: 
-=============
+### Introduction
 
-For build process do the following:
+The controller classes accept the configuration parameters in their respective constructors. The code uses a Java library ([UniRest](http://unirest.io/java.html)). The reference to this library is already added as a Maven dependency in the pom.xml file.
 
-    1. Open Eclipse and use "Import" option in "File" menu.
-    2. Select "General -> Existing Projects into Workspace" option from the tree list.
-    3. In "Select root directory", provide path to the unzipped archive for The code.
-    4. Click "Finish" and ensure that "Project -> Build Automatically" option is enabled in the menu.
+###How to build and install via Maven: 
 
-How To Use:
-===========
-Export the compiled classes as a java libray (jar). The exported jar can be used as library.
-See the following links for more information on this topic.
+* Extract the zip file to a new folder named JavaSDK
+* Open a command prompt and navigate to the JavaSDK/QordobaLib folder
+* Execute "mvn install." This will install dependencies and also add the JAR in your local Maven repository
+* In your own Maven application, add the following lines which will refer to the newly installed SDK: 
+ 
+```
+<dependency>
+	<groupId>QordobaLib</groupId>
+	<artifactId>QordobaLib</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<scope>compile</scope>
+</dependency>
+```
 
-Exporting JARs:
-http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Ftasks%2Ftasks-33.htm
+###How to build and install via Eclipse:
 
-Using JARs:
-http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jst.j2ee.doc.user%2Ftopics%2Ftjimpapp.html
+* Open Eclipse and use the Import option in File menu
+* Select General -> Existing Projects into Workspace option from the tree list
+* In Select Root Directory, provide path to the unzipped archive for the code
+* Click Finish and ensure that the Project -> Build Automatically option is enabled in the menu
+
+
+###How to leverage the library:
+
+The exported JAR can now be used as a Java library. To learn more about this topic, check out these resources: 
+
+[Exporting JARs](http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Ftasks%2Ftasks-33.htm)
+		[Using JARs](http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jst.j2ee.doc.user%2Ftopics%2Ftjimpapp.html)
+
+
+
+
+### Bug reports
+Have a bug? Please create an issue [here](https://github.com/Qordobacode/api-sdk-java/issues) on GitHub! 
